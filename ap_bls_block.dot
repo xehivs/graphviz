@@ -1,0 +1,16 @@
+digraph d {
+	rankdir = LR
+
+	node [shape = rectangle]
+	A [label="Edge detection"]
+	B [label="Filtering"]
+	C [label="Edge mask"]
+	D [label="Channels computation"]
+	E [label="Channels normalization"]
+	F [label="Edge-region separation"]
+	G [label="Blurred labelling"]
+	
+	A -> B -> C -> F -> G [color = red]
+	A -> B -> C -> D -> E [color = blue]
+	
+}
