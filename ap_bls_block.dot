@@ -1,6 +1,8 @@
 digraph d {
 	rankdir = LR
 
+	node [fontsize=11 fontname="Operator Mono"];
+
 	node [shape = rectangle]
 	A [label="Edge detection"]
 	B [label="Filtering"]
@@ -11,6 +13,6 @@ digraph d {
 	G [label="Blurred labelling"]
 	
 	A -> B -> C -> F -> G [color = red]
-	A -> B -> C -> D -> E [color = blue]
+	A -> B -> C -> D -> E [color = black]
 	
 }

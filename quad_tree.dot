@@ -1,0 +1,42 @@
+digraph d {
+	rankdir = TB
+
+	node [fontsize=14 fontname="Operator Mono"];
+	edge [color = "#CCCCCC", weight = .5]
+
+	splines = ortho
+
+	node [shape = square, color = "#CCCCCC", style = dashed, fontcolor = "#AAAAAA"]
+	{A} 
+	{B C D E}
+	{F G H I J K L M N O P Q}
+	{37 38 39 40 57 58 59 60}
+	
+	B [shape = square, style = filled, fillcolor = "#FFFFFF", color = "#000000", fontcolor = black]
+	F [shape = square, style = filled, fillcolor = "#FFFFFF", color = "#000000", fontcolor = black]
+	G [shape = square, style = filled, fillcolor = "#FFFFFF", color = "#000000", fontcolor = black]
+	H [shape = square, style = filled, fillcolor = "#DDDDDD", color = "#000000", fontcolor = black]
+	I [shape = square, style = filled, fillcolor = "#DDDDDD", color = "#000000", fontcolor = black]
+	J [shape = square, style = filled, fillcolor = "#FFFFFF", color = "#000000", fontcolor = black]
+	37 [shape = square, style = filled, fillcolor = "#FFFFFF", color = "#000000", fontcolor = black]
+	38 [shape = square, style = filled, fillcolor = "#DDDDDD", color = "#000000", fontcolor = black]
+	39 [shape = square, style = filled, fillcolor = "#DDDDDD", color = "#000000", fontcolor = black]
+	40 [shape = square, style = filled, fillcolor = "#DDDDDD", color = "#000000", fontcolor = black]
+	N [shape = square, style = filled, fillcolor = "#DDDDDD", color = "#000000", fontcolor = black]
+	O [shape = square, style = filled, fillcolor = "#DDDDDD", color = "#000000", fontcolor = black]
+	L [shape = square, style = filled, fillcolor = "#FFFFFF", color = "#000000", fontcolor = black]
+	M [shape = square, style = filled, fillcolor = "#DDDDDD", color = "#000000", fontcolor = black]
+	57 [shape = square, style = filled, fillcolor = "#DDDDDD", color = "#000000", fontcolor = black]
+	58 [shape = square, style = filled, fillcolor = "#DDDDDD", color = "#000000", fontcolor = black]
+	59 [shape = square, style = filled, fillcolor = "#DDDDDD", color = "#000000", fontcolor = black]
+	60 [shape = square, style = filled, fillcolor = "#FFFFFF", color = "#000000", fontcolor = black]
+	Q [shape = square, style = filled, fillcolor = "#FFFFFF", color = "#000000", fontcolor = black]
+	
+	A -> {B C D E} 
+	C -> {F G H I}
+	D -> {J K L M}
+	E -> {N O P Q}
+	K -> {37 38 39 40}
+	P -> {57 58 59 60}
+	
+}
