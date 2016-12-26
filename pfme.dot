@@ -1,0 +1,91 @@
+digraph G {
+	center = 1;
+	splines=ortho;
+	nodesep=0.1;
+    rankdir=BT;
+	fontsize=12 
+	fontname="Operator Mono" 
+	compound=true
+
+	edge [minlen = 2 fontname="Operator Mono" fontsize=11];
+    node [height=.4 shape=record fontsize=12 fontname="Operator Mono" margin = 0];
+
+	mava [label = "PFME" width = 14.45 height = .75 fontsize = 14];
+
+	subgraph cluster_0 
+	{
+		edge [minlen = 1];
+		rank = same;
+		group = g1;
+    	a4[label="" width=3.3 label="image 1"];
+		
+		a3[label = "class d"];
+		a2[color=white label="..."];
+		a1[label = "class 2"];
+		a0[label = "class 1"];
+
+	 	a0 -> a4 [xlabel = <θ<SUP>1</SUP> >];
+		a1 -> a4 [xlabel = "θ2 "];
+		a2 -> a4 [style=invis];
+		a3 -> a4 [xlabel = "θd "];
+
+		label = "λ1";
+	}
+
+	subgraph cluster_1 
+	{
+		edge [minlen = 1];
+		rank = same;
+		group = g1;
+    	b4[label="" width=3.3 label="image 2"];
+		
+		b3[label = "class d"];
+		b2[color=white label="..."];
+		b1[label = "class 2"];
+		b0[label = "class 1"];
+
+	 	b0 -> b4 [xlabel = "θ1 "];
+		b1 -> b4 [xlabel = "θ2 "];
+		b2 -> b4[style=invis];
+		b3 -> b4 [xlabel = "θd "];
+
+		label = "λ2";
+	}
+
+	subgraph cluster_2
+	{
+		edge [minlen = 1];
+		rank = same;
+		group = g1;
+		color = white;
+    	c4[label="" width = 3.3 style = invis];
+		c2[color=white label="..."  fontsize = 30];
+		c2 -> c4[style=invis];
+		label = " ";
+	}
+
+	subgraph cluster_3 
+	{
+		edge [minlen = 1];
+		rank = same;
+		group = g1;
+    	d4[label="" width=3.3 label="image k"];
+		
+		d3[label = "class d"];
+		d2[color=white label="..."];
+		d1[label = "class 2"];
+		d0[label = "class 1"];
+
+	 	d0 -> d4 [xlabel = "θ1 "];
+		d1 -> d4 [xlabel = "θ2 "];
+		d2 -> d4[style=invis];
+		d3 -> d4 [xlabel = "θd "];
+
+		label = "λk";
+	}
+
+	a4 -> mava [ltail=cluster_0];
+	b4 -> mava [ltail=cluster_1];
+	c4 -> mava [style=invis];
+	d4 -> mava [ltail=cluster_3];
+}

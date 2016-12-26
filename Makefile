@@ -3,3 +3,4 @@ all:
 	cp model.dot.png ~/Articles/phd/Figures/eec_model.png
 	cp ap_bls_block.dot.png ~/Articles/phd/Figures/ap_bls_block.png
 	cp quad_tree.dot.png ~/Articles/phd/Figures/quad_tree.png
+	cp pfme.dot.png ~/Articles/2016_jifs/figures/model.png
